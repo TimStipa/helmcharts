@@ -3,7 +3,36 @@ entries:
   wordpress:
   - apiVersion: v1
     appVersion: 5.3.2
-    created: "2021-02-19T21:05:37.83133121Z"
+    created: "2021-02-19T21:29:40.69235057Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 7.x.x
+    deprecated: true
+    description: CUSTOM Web publishing platform for building blogs and websites using a NodePort to expose application.
+    digest: 71db155f4929dfef1ba7b5a9d73eabe9da8fd8e5f439b00cceb319eb4242ba5d
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-9.1.0.tgz
+    version: 9.1.0
+  - apiVersion: v1
+    appVersion: 5.3.2
+    created: "2021-02-19T21:29:40.683113185Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -30,4 +59,4 @@ entries:
     urls:
     - wordpress-9.0.3.tgz
     version: 9.0.3
-generated: "2021-02-19T21:05:37.819463632Z"
+generated: "2021-02-19T21:29:40.67734645Z"
